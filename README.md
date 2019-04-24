@@ -5,7 +5,9 @@ The CSS and web font files to easily self-host [Public Sans](https://github.com/
 
 ## Install
 
-`npm install --save typeface-public-sans`
+```
+npm install --save typeface-public-sans
+```
 
 ## Usage
 
