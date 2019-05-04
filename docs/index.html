@@ -1,131 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Typeface Public Sans</title>
-    <link href="files/index.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Typeface Public Sans</title>
+  <link href="files/index.css" rel="stylesheet">
 
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Public Sans", sans-serif;
-        font-variant: common-ligatures;
-        font-size: 20px;
-        line-height: 1.5;
-      }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+      font-family: "Public Sans", sans-serif;
+      font-variant: common-ligatures;
+      font-size: 18px;
+      line-height: 1.3;
+    }
 
-      main {
-        max-width: 720px;
-        margin: 0 auto 4rem;
-      }
+    section {
+      margin-bottom: 4rem;
+    }
 
-      h1 {
-        margin: 1em 0;
-        font-weight: 500;
-        font-size: 4.25em;
-        line-height: 1.1;
-        text-transform: lowercase;
-      }
+    header p {
+      font-size: 120%;
+    }
 
-      h2 {
-        font-size: 1.75em;
-      }
+    h1 {
+      margin: 0 0 0.5em;
+      font-weight: 700;
+      font-size: 2.75em;
+    }
 
-      h3 {
-        font-weight: 600;
-      }
+    h2 {
+      margin: 0 0 0.75em;
+      font-weight: 600;
+      font-size: 1.75em;
+    }
 
-      h1, a {
-        color: teal;
-      }
+    h3 {
+      font-weight: 600;
+    }
 
-      p {
-        margin: 0 0 3rem;
-      }
+    p {
+      margin: 0 0 2rem;
+    }
 
-      code {
-        display: block;
-        margin: 6rem 0;
-        font-size: 120%;
-        font-family:
-          "SFMono-Regular",
-          Consolas,
-          "Liberation Mono",
-          Menlo,
-          Courier,
-          monospace;
-      }
+    a {
+      border-bottom: 1px solid transparent;
+      text-decoration: none;
+      color: navajowhite;
+    }
 
-      a {
-        text-decoration: none;
-      }
+    a:hover {
+      text-decoration: underline;
+    }
 
-      a:hover {
-        text-decoration: underline;
-      }
+    a img {
+      transition: transform 0.2s ease-in-out;
+    }
 
-      .italic {
-        font-style: italic;
-      }
+    a:hover img {
+      transform: scale(1.08);
+    }
 
-      .w900 { font-weight: 900; }
-      .w800 { font-weight: 800; }
-      .w700 { font-weight: 700; }
-      .w600 { font-weight: 600; }
-      .w500 { font-weight: 500; }
-      .w400 { font-weight: 400; }
-      .w300 { font-weight: 300; }
-      .w200 { font-weight: 200; }
-      .w100 { font-weight: 100; }
-    </style>
-  </head>
-  <body>
+    code {
+      display: inline-block;
+      margin: 2rem 0 4rem;
+      padding: 0.5em 1em;
+      background: #222;
+      border-radius: 0.25em;
+      color: #fff;
+      font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        Menlo,
+        Courier,
+        monospace;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 4rem auto;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .w900 { font-weight: 900; }
+    .w800 { font-weight: 800; }
+    .w700 { font-weight: 700; }
+    .w600 { font-weight: 600; }
+    .w500 { font-weight: 500; }
+    .w400 { font-weight: 400; }
+    .w300 { font-weight: 300; }
+    .w200 { font-weight: 200; }
+    .w100 { font-weight: 100; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Public Sans Webfonts</h1>
+      <p>
+        <a href="https://www.npmjs.com/package/typeface-public-sans">npm package</a> to easily self-host the typeface <a href="https://public-sans.digital.gov/">Public Sans</a>.
+      </p>
+    </header>
     <main>
       <a href="https://github.com/grubersjoe/typeface-public-sans" title="Fork me on GitHub">
-        <img src="github.svg" width="48" style="position: absolute; top: 2rem; right: 2rem;">
+        <img src="github.svg" width="32" style="position: absolute; top: 2rem; right: 2rem;">
       </a>
 
-      <h1>Public Sans<br>Webfonts</h1>
+      <code>npm install --save typeface-public-sans</code>
 
-      <code>npm install typeface-public-sans</code>
+      <h2 style="margin-bottom: 6rem;">
+        <a href="https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/">Why should I self-host fonts?</a>
+        <br>
+        Performance!
+      </h2>
 
-      <h2 class="w900">Public Sans Black (900)</h2>
-      <h2 class="w800">Public Sans Extra Bold (800)</h2>
-      <h2 class="w700">Public Sans Bold (700)</h2>
-      <h2 class="w600">Public Sans Semi Bold (600)</h2>
-      <h2 class="w500">Public Sans Medium (500)</h2>
-      <h2 class="w400">Public Sans Regular (400)</h2>
-      <h2 class="w300">Public Sans Light (300)</h2>
-      <h2 class="w200">Public Sans Extra Light (200)</h2>
-      <h2 class="w100">Public Sans Thin (100)</h2>
+      <section>
+        <h2 class="w100">Public Sans Thin (100)</h2>
+        <h2 class="w200">Public Sans Extra Light (200)</h2>
+        <h2 class="w300">Public Sans Light (300)</h2>
+        <h2 class="w400">Public Sans Regular (400)</h2>
+        <h2 class="w500">Public Sans Medium (500)</h2>
+        <h2 class="w600">Public Sans Semi Bold (600)</h2>
+        <h2 class="w700">Public Sans Bold (700)</h2>
+        <h2 class="w800">Public Sans Extra Bold (800)</h2>
+        <h2 class="w900">Public Sans Black (900)</h2>
+      </section>
 
-      <br>
+      <section>
+        <h2 class="w100 italic">Public Sans Thin Italic (100)</h2>
+        <h2 class="w200 italic">Public Sans Extra Light Italic (200)</h2>
+        <h2 class="w300 italic">Public Sans Light Italic (300)</h2>
+        <h2 class="w400 italic">Public Sans Regular Italic (400)</h2>
+        <h2 class="w500 italic">Public Sans Medium Italic (500)</h2>
+        <h2 class="w600 italic">Public Sans Semi Bold Italic (600)</h2>
+        <h2 class="w700 italic">Public Sans Bold Italic (700)</h2>
+        <h2 class="w800 italic">Public Sans Extra Bold Italic (800)</h2>
+        <h2 class="w900 italic">Public Sans Black Italic (900)</h2>
+      </section>
 
-      <h2 class="w900 italic">Public Sans Black Italic (900)</h2>
-      <h2 class="w800 italic">Public Sans Extra Bold Italic (800)</h2>
-      <h2 class="w700 italic">Public Sans Bold Italic (700)</h2>
-      <h2 class="w600 italic">Public Sans Semi Bold Italic (600)</h2>
-      <h2 class="w500 italic">Public Sans Medium Italic (500)</h2>
-      <h2 class="w400 italic">Public Sans Regular Italic (400)</h2>
-      <h2 class="w300 italic">Public Sans Light Italic (300)</h2>
-      <h2 class="w200 italic">Public Sans Extra Light Italic (200)</h2>
-      <h2 class="w100 italic">Public Sans Thin Italic (100)</h2>
+      <section>
+        <p>
+          Simon Wheeler backed me into a corner and blockaded me there with his chair, and then sat me down and reeled off the monotonous narrative which follows this paragraph.
+          Simon Wheeler me hizo retroceder en una esquina y me bloqueó allí con su silla, y luego me sentó y me dio cuenta de la monótona narrativa que sigue a este párrafo.
+        </p>
 
-      <br>
-      <br>
-
-      <p>
-        Simon Wheeler backed me into a corner and blockaded me there with his chair, and then sat me down and reeled off the monotonous narrative which follows this paragraph.
-        Simon Wheeler me hizo retroceder en una esquina y me bloqueó allí con su silla, y luego me sentó y me dio cuenta de la monótona narrativa que sigue a este párrafo.
-      </p>
-
-      <p class="italic">
-        Simon Wheeler backed me into a corner and blockaded me there with his chair, and then sat me down and reeled off the monotonous narrative which follows this paragraph.
-        Simon Wheeler me hizo retroceder en una esquina y me bloqueó allí con su silla, y luego me sentó y me dio cuenta de la monótona narrativa que sigue a este párrafo.
-      </p>
-
-      <br>
+        <p class="italic">
+          Simon Wheeler backed me into a corner and blockaded me there with his chair, and then sat me down and reeled off the monotonous narrative which follows this paragraph.
+          Simon Wheeler me hizo retroceder en una esquina y me bloqueó allí con su silla, y luego me sentó y me dio cuenta de la monótona narrativa que sigue a este párrafo.
+        </p>
+      </section>
 
       <p>
         <a href="https://github.com/uswds/public-sans/">Public Sans on GitHub</a>
@@ -133,5 +162,6 @@
         Package by <a href="https://grubersjoe.de">@grubersjoe</a>
       </p>
     </main>
-  </body>
+  </div>
+</body>
 </html>
