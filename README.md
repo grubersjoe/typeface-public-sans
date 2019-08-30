@@ -1,6 +1,8 @@
 
 # Typeface Public Sans
 
+> This package has been archived since it is has been integrated into the central [Typeface](https://github.com/KyleAMathews/typefaces) project.
+
 The CSS and web font files to easily self-host [Public Sans](https://github.com/uswds/public-sans/). This package is inspired by the effort of Kyle Mathews to create [npm packages for all typefaces](https://www.bricolage.io/typefaces-easiest-way-to-self-host-fonts/) to improve font loading performance.
 
 ## Install
